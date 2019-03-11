@@ -1,0 +1,74 @@
+---
+title: 'Warmup 01: Markdown Syntax'
+author: "Ana Fung"
+date: "1/29/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Star Wars
+#### Jarek Yeager
+>*You can work as a mechanic on my team. But when it comes to your mission as a spy, I don't want anything to do with it.*
+
+--―Jarek Yeager, to Kazuda Xiono
+
+![] [1]
+
+[1]: https://vignette.wikia.nocookie.net/starwars/images/d/dd/Jarek.jpg/revision/latest?cb=20180905013807
+
+Description | Value
+------------|---------
+Species     | Human
+Gender      | Male
+Hair Color  | Black, graying
+Eye Color   | Brown
+Skin Color  | Dark
+
+## Cooking Recipe: Miso Sweet Potato and Broccoli Bowl
+#### Ingredients
+- 1 cup dried rice
+- 1 to 2 sweet potatoes
+- 1 large bundle broccoli
+- 1 to 2 tablespoons olive oil
+- salt
+- black pepper
+- 1 teaspoon sesame seeds
+- 1 tablespoon minced fresh ginger
+- 1 small garlic clove, minced
+- 2 tablespoons white miso
+- 2 tablespoons tahini
+- 1 tablespoon honey
+- 1/4 cup rice vinegar
+- 2 tablespoons toasted sesame oil
+
+#### "Special" Kitchen Tools
+- blender
+- rice cooker
+- oven
+- baking sheet 
+
+#### Cooking Directions
+1. Pre-heat oven and cook rice in rice cooker
+2. Cut sweet potato and broccoli into small pieces and place onto a greased baking sheet; season them with salt and pepper
+3. Prepare dressing while vegetables roast
+4. When finished roasting, assemble the bowl by placing rice on the bottom, topped by roasted vegetables and dressing
+
+![] [2]
+
+[2]: https://smittenkitchendotcom.files.wordpress.com/2013/10/10129849956_5b4c826237_o.jpg?w=1500 
+
+#### Other Information
+The peak season for sweet potatoes **October through December** and **October through April** for broccoli. This recipe probably works best during these months in a year.
+
+The dressing for this *Smitten Kitchen* recipe can also be made with any kind of nut butter instead of tahini. The base of the bowl can also be noodles, beans, and other grains.
+
+## Euclidean Distance
+
+
+
+
+
+
+
