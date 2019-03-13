@@ -1,6 +1,6 @@
-##Data Dictionary##
+## Data Dictionary ##
                                                                                                                         
-####Variable Names####    
+#### Variable Names ####    
 `team_name`: name of the NBA team that the player belongs in.  
 `game_date`: the dates of team games that the player participated in.   
 `season`: the corresponding year of the basketball season.  
