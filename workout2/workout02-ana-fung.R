@@ -57,8 +57,10 @@ ui <- fluidPage(
       
       # Show a modalities plot and table
       mainPanel(
+         h4("Timeline"),
         #timeline plot
          plotOutput("modPlot"),
+         h4("Balances"),
          #balances table
          verbatimTextOutput("balances")
       )
