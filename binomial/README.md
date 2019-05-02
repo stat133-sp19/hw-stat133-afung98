@@ -40,47 +40,93 @@ library(binomial)
 
 #calculating combinations
 bin_choose(trials = 5L, success = 2)
+#> [1] 10
 
 #calculating probability of successes, assuming that the probability of success is 0.5
 bin_probability(success = 0:2, trials = 5L, prob = 0.5)
+#> [1] 0.03125 0.15625 0.31250
 
 # binomial probability distribution
 bin_distribution(trials = 5L, prob = 0.5)
+#>   success probability
+#> 1       0     0.03125
+#> 2       1     0.15625
+#> 3       2     0.31250
+#> 4       3     0.31250
+#> 5       4     0.15625
+#> 6       5     0.03125
 
 #plotting probability histogram 
 dis1 <- bin_distribution(trials = 5L, prob = 0.5)
 plot(dis1)
+#image of plot;
+#>      [,1]
+#> [1,]  0.7
+#> [2,]  1.9
+#> [3,]  3.1
+#> [4,]  4.3
+#> [5,]  5.5
+#> [6,]  6.7
 
 # binomial cumulative distribution
 bin_cumulative(trials = 5L, prob = 0.5)
+#>   success probability cumulative
+#> 1       0     0.03125    0.03125
+#> 2       1     0.15625    0.18750
+#> 3       2     0.31250    0.50000
+#> 4       3     0.31250    0.81250
+#> 5       4     0.15625    0.96875
+#> 6       5     0.03125    1.00000
 
 # plotting binomial cumulative distribution
 dis2 <- bin_cumulative(trials = 5L, prob = 0.5)
 plot(dis2)
+#image of plot
 
 #listing binomial variable and its attributes
 bin_variable(5L, 0.3)
+#> Binomial variable
+#> 
+#> Parameters
+#> number of trials 5
+#> probability of success 0.3
 
 #showing all summary measures of the binomial variable
 bin1 <- bin_variable(trials = 10L, p = 0.3)
 binsum1 <- summary(bin1)
 binsum1
+#> Binomial variable
+#> 
+#> Parameters
+#> - number of trials: 10
+#> - probability of success: 0.3
+#> 
+#> Measures
+#> - mean: 3
+#> - variance: 2.1
+#> - mode: 3.3
+#> - skewness: 0.2760262
+#> - kurtosis: -0.2666667
 
 #mean of the distribution
 bin_mean(10L, 0.3)
+#> [1] 3
 
 #variance of the distribution
 bin_variance(10L, 0.3)
+#> [1] 2.1
 
 #mode of the distribution
 bin_mode(10L, 0.3)
+#> [1] 3.3
 
 #skewness of the distribution
 bin_skewness(10L, 0.3)
+#> [1] 0.2760262
 
 #tailedness of the distribution via the Kurtosis formula
 bin_kurtosis(10L, 0.3)
-
+#> [1] -0.2666667
 ```
 
 
