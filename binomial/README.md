@@ -1,5 +1,5 @@
 ## Overview
--------------------
+
 `"binomial"` is an R package that implements functions for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance, etc.
 
 - `bin_choose()` calculates the number of combinations in which k successes can occur in n trials
@@ -16,18 +16,19 @@
 - `bin_kurtosis()` calculates tailedness of a binomial distribution; kurtosis formula
 
 ## Motivation
---------------------
+
 This package has been developed to illustrate some of the concepts behind the creation of an R package.
 
 ## Installation
--------------------
-`# development version from GitHub:
-#install.packages("devtools") 
+
+```{r}
+# development version from GitHub:
+install.packages("devtools") 
 
 # install "cointoss" (without vignettes)
 devtools::install_github("stat133-sp19/hw-stat133-afung98/binomial")
 
 # install "cointoss" (with vignettes)
 devtools::install_github("stat133-sp19/hw-stat133-afung98/binomial", build_vignettes = TRUE)`
-
+```
 
