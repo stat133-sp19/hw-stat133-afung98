@@ -39,12 +39,21 @@ library(binomial)
 
 #calculating combinations
 bin_choose(trials = 5L, success = 2)
+#> [1] 10
 
 #calculating probability of successes, assuming that the probability of success is 0.5
 bin_probability(success = 0:2, trials = 5L, prob = 0.5)
+#> [1] 0.03125 0.15625 0.31250
 
 # binomial probability distribution
 bin_distribution(trials = 5L, prob = 0.5)
+#>   success probability
+#> 1       0     0.03125
+#> 2       1     0.15625
+#> 3       2     0.31250
+#> 4       3     0.31250
+#> 5       4     0.15625
+#> 6       5     0.03125
 
 #plotting probability histogram 
 dis1 <- bin_distribution(trials = 5L, prob = 0.5)
