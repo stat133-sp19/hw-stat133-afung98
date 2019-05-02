@@ -29,6 +29,55 @@ install.packages("devtools")
 devtools::install_github("stat133-sp19/hw-stat133-afung98/binomial")
 
 # install "cointoss" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-afung98/binomial", build_vignettes = TRUE)`
+devtools::install_github("stat133-sp19/hw-stat133-afung98/binomial", build_vignettes = TRUE)
 ```
 
+## Usage
+
+```{r}
+library(binomial)
+
+#calculating combinations
+bin_choose(trials = 5L, success = 2)
+
+#calculating probability of successes, assuming that the probability of success is 0.5
+bin_probability(success = 0:2, trials = 5L, prob = 0.5)
+
+# binomial probability distribution
+bin_distribution(trials = 5L, prob = 0.5)
+
+#plotting probability histogram 
+dis1 <- bin_distribution(trials = 5L, prob = 0.5)
+plot(dis1)
+
+# binomial cumulative distribution
+bin_cumulative(trials = 5L, prob = 0.5)
+
+# plotting binomial cumulative distribution
+dis2 <- bin_cumulative(trials = 5L, prob = 0.5)
+plot(dis2)
+
+#listing binomial variable and its attributes
+bin_variable(5L, 0.3)
+
+#showing all summary measures of the binomial variable
+bin1 <- bin_variable(trials = 10L, p = 0.3)
+binsum1 <- summary(bin1)
+binsum1
+
+#mean of the distribution
+bin_mean(10L, 0.3)
+
+#variance of the distribution
+bin_variance(10L, 0.3)
+
+#mode of the distribution
+bin_mode(10L, 0.3)
+
+#skewness of the distribution
+bin_skewness(10L, 0.3)
+
+#tailedness of the distribution via the Kurtosis formula
+bin_kurtosis(10L, 0.3)
+
+```
